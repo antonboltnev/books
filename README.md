@@ -1,6 +1,11 @@
-# bicco
+# Books
 
 ## Project setup
+```
+npm install
+```
+
+## Setup server cd src/server
 ```
 npm install
 ```
