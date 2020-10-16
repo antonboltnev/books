@@ -1,0 +1,135 @@
+@import "variables.scss";
+// grid
+@import "./mixins/grid";
+@include generatorGridCols((10, 15, 20, 25, 30, 33, 45, 66, 50, 75, 100));
+@include generatorGridColsXs((10, 15, 20, 25, 30, 33, 45, 66, 50, 75, 100));
+@include generatorGridColsSm((10, 15, 20, 25, 30, 33, 45, 66, 50, 75, 100));
+@include generatorGridColsMd((10, 15, 20, 25, 30, 33, 45, 66, 50, 75, 100));
+@include generatorGridColsLg((10, 15, 20, 25, 30, 33, 45, 66, 50, 75, 100));
+
+//text align
+@import "./mixins/text-align.scss";
+@include generatorTextAlign(center);
+@include generatorTextAlign(right);
+@include generatorTextAlign(left);
+
+body, html {
+    font-family: "Source Sans Pro", sans-serif;
+    background: #f2f2f2;
+    color: #2D2D2D;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+//flex positioning
+.row {
+    display: flex;
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+}
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.align-flex-end {
+    align-items: flex-end;
+}
+
+.align-flex-start {
+    align-items: flex-start;
+}
+
+.align-start {
+    align-items: start;
+}
+
+.self-align-baseline {
+    align-self: baseline;
+}
+
+.self-align-center {
+    align-self: center;
+}
+
+.self-align-end {
+    align-self: end;
+}
+
+.self-align-flex-end {
+    align-self: flex-end;
+}
+
+.self-align-start {
+    align-self: start;
+}
+
+//Font size
+.big-text {
+    font-size: 20px;
+}
+.small-text {
+    font-size: 12px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.light-text {
+    font-weight: lighter;
+}
+
+//color classes
+.primary {
+    color: $primary;
+}
+
+.grey-italic {
+    color: #3f3f3f;
+    font-style: italic;
+}
+.link-wrapper {
+    color: #6b6b6b;
+    margin-bottom: 15px;
+    cursor: pointer;
+    .material-icons {
+        position: relative;
+        top: 1px;
+    }
+}
+
